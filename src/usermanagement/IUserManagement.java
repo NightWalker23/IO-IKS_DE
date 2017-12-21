@@ -1,7 +1,7 @@
 /*
  * Created by IKS DE, IS WIMiIP AGH 2017
  */
-package iksde.usermanagement;
+package usermanagement;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public interface IUserManagement {
      * Add user
      * @param username
      */
-    void createUser(String username);
+    void createUser(String username, int permissionLevel);
 
 	/**
 	 * Delete user

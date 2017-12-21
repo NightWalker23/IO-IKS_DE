@@ -3,28 +3,22 @@
  */
 package main;
 
-import iksde.headleader.Headleader;
-import iksde.usermanagement.User;
+import headleader.Headleader;
+import usermanagement.User;
 
 public class Main {
     
     public static void main(String[] args){
         
         Headleader headleader = new Headleader();
-        headleader.createUser( "user1 );
-		headleader.createUser( "user2" );
-		headleader.createUser( "user3" );
-		headleader.createUser( "user4" );
-		headleader.createUser( "user5" );
-		headleader.createUser( "user6" );
+        headleader.createUser( "user1", 1 );
+		headleader.createUser( "user2", 1 );
 
 		headleader.deleteUser( 1 );
 
-		headleader.createUser( "user7" );
+		headleader.createUser( "user3", 1 );
 
 		for ( User usr : headleader.getUserList() )
 			System.out.println( usr.getUserID() + "\t" + usr.getUsername() );
-
-
 	}
 }

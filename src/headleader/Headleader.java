@@ -1,22 +1,30 @@
 /*
  * Created by IKS DE, IS WIMiIP AGH 2017
  */
-package iksde.headleader;
+package headleader;
 
 import java.util.List;
-import iksde.usermanagement.IUserManagement;
-import iksde.usermanagement.User;
-import iksde.usermanagement.UserManagement;
+
+import com.spanishinquisition.functions.IAuth;
+import io2017.pierogimroku.task.ORMLiteTaskManager;
+import io2017.pierogimroku.task.api.ITaskManager;
+import usermanagement.IUserManagement;
+import usermanagement.User;
+import usermanagement.UserManagement;
 
 public class Headleader {
 
-    //ITaskManager taskManager;
+    ITaskManager taskManager;
     IUserManagement userManagement;
+    IAuth auth;
+    String token;
 
     public Headleader() {
 
-        //taskManager = new ORMLiteTaskManager();
-        userManagement = new UserManagement();
+        taskManager = new ORMLiteTaskManager();
+        userManagement = UserManagement.getInstance();
+        auth = new IAuth() {};
+        token = auth.login("root", "password");
     }
 
 	/**
@@ -26,23 +34,29 @@ public class Headleader {
 	 */
 	public void assignTask(int userID, int taskID) {
 
-        //TODO: user implemented taskManager
-        //taskManager.assignToTask(taskID, userID);
+		if (auth.authorize(token)) {
+			//TODO: user implemented taskManager
+			//taskManager.assignToTask(taskID, userID);
+		}
     }
 
 	/**
 	 * Get list of all tasks
 	 */
 	public void getTaskList() {
-        //TODO pierogi need to add this method in ITaskManager
+		if (auth.authorize(token)) {
+			//TODO pierogi need to add this method in ITaskManager
+		}
     }
 
-//    /**
-//     * Add new task using method provided by ITakManager
-//     * @param task
-//     */
+    /**
+     * Add new task using method provided by ITaskManager
+     * @param task
+     */
 //    public void addTask(Task task){
-//        taskManager.addTask(task);
+//		if (auth.authorize(token)) {
+//			taskManager.addTask(task);
+//		}
 //    }
 
     /**
@@ -50,15 +64,22 @@ public class Headleader {
      * @return list of users
      */
     public List<User> getUserList() {
-        return userManagement.getUserList();
+		if (auth.authorize(token)) {
+			return userManagement.getUserList();
+		}
+		else
+			return null;
     }
 
 	/**
 	 * Create a new user using method provided by IUserManagement
 	 * @param username
 	 */
-	public void createUser(String username){
-        userManagement.createUser(username);
+	public void createUser(String username, int permissionLevel){
+
+		if (auth.authorize(token)) {
+			userManagement.createUser(username, permissionLevel);
+		}
     }
 
 	/**
@@ -66,6 +87,9 @@ public class Headleader {
 	 * @param userID
 	 */
     public void deleteUser(int userID){
-        userManagement.deleteUser(userID);
+
+		if (auth.authorize(token)) {
+			userManagement.deleteUser(userID);
+		}
     }    
 }
