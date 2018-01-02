@@ -5,7 +5,9 @@ package usermanagement;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class UserManagement implements IUserManagement, IUserData {
 
@@ -186,6 +188,32 @@ public class UserManagement implements IUserManagement, IUserData {
 			}
 		}
 		return permissionLevel;
+	}
+
+	@Override
+	public Map<Integer, String> getUsersMap () {
+
+		List<User> localUsers = null;
+
+		try {
+			FileInputStream fileIn = new FileInputStream(file);
+			ObjectInputStream in = new ObjectInputStream(fileIn);
+			localUsers = (List<User>) in.readObject();
+			in.close();
+			fileIn.close();
+		}
+		catch (IOException i) {
+			i.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		Map<Integer, String> usersMap = new HashMap<>();
+
+		for ( User el : localUsers )
+			usersMap.put( el.getUserID(), el.getUsername() );
+
+		return usersMap;
 	}
 
 

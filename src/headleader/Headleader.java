@@ -21,7 +21,7 @@ public class Headleader {
 
     public Headleader() {
 
-        taskManager = new ORMLiteTaskManager();
+        //taskManager = new ORMLiteTaskManager();
         userManagement = UserManagement.getInstance();
         auth = new IAuth() {};
         token = auth.login("root", "password");

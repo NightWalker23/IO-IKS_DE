@@ -4,7 +4,11 @@
 package main;
 
 import headleader.Headleader;
+import usermanagement.IUserData;
 import usermanagement.User;
+import usermanagement.UserManagement;
+
+import java.util.Map;
 
 public class Main {
     
@@ -20,5 +24,14 @@ public class Main {
 
 		for ( User usr : headleader.getUserList() )
 			System.out.println( usr.getUserID() + "\t" + usr.getUsername() );
+
+
+//		IUserData ud = UserManagement.getInstance();
+//		Map<Integer, String> um = ud.getUsersMap();
+//
+//		for ( Map.Entry<Integer, String> entry : um.entrySet() ){
+//			System.out.println( "ID: " + entry.getKey() + "\nUsername: " + entry.getValue() + "\n" );
+//		}
+
 	}
 }
