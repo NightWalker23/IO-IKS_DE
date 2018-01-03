@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Biblioteki">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Biblioteki/ormlite-core-4.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Biblioteki/ormlite-jdbc-4.23.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Biblioteki/sqlite-jdbc-3.21.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Biblioteki/taskmanager-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Biblioteki/taskmanager-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Biblioteki/taskmanager-api-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Biblioteki/taskmanager-mock-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Biblioteki/IO-1.0-SNAPSHOT-jar-with-dependencies.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/Biblioteki/IO-1.0-SNAPSHOT-jar-with-dependencies.jar!/" />
+    </SOURCES>
+  </library>
+</component>
