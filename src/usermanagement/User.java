@@ -1,25 +1,27 @@
 /*
  * Created by IKS DE, IS WIMiIP AGH 2017
  */
-package iksde.usermanagement;
+package usermanagement;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
 
     private int userID;
+    private int permissionLevel;
     private String username;
     private String password;
-
-    private static int autoinc = 0;
 
     /**
      * Create a new user
      * @param username
      */
-    public User(String username) {
+    public User(String username, int permissionLevel, int ID) {
 
         this.username = username;
         this.password = "password";
-        this.userID = autoinc++;
+        this.userID = ID;
+        this.permissionLevel = permissionLevel;
     }
 
     /**
@@ -37,5 +39,20 @@ public class User {
     public String getUsername() {
         return username;
     }
-       
+
+    /**
+     *
+     * @return password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     *
+     * @return permission
+     */
+    public int getPermissionLevel() {
+        return permissionLevel;
+    }
 }
