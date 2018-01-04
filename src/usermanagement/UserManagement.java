@@ -132,7 +132,6 @@ public class UserManagement implements IUserManagement, IUserData {
 	 */
 	@Override
     public List<User> getUserList() {
-
         return userList;
     }
 
@@ -143,6 +142,7 @@ public class UserManagement implements IUserManagement, IUserData {
 	 */
 	@Override
 	public String getUserPassword(String login) {
+		//TODO: zahashować password
 
 		String password = null;
 		for (User user : userList) {
@@ -190,6 +190,10 @@ public class UserManagement implements IUserManagement, IUserData {
 		return permissionLevel;
 	}
 
+	/**
+	 *
+	 * @return Map od Users and their ID
+	 */
 	@Override
 	public Map<Integer, String> getUsersMap () {
 
@@ -215,6 +219,5 @@ public class UserManagement implements IUserManagement, IUserData {
 
 		return usersMap;
 	}
-
 
 }

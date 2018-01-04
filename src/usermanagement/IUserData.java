@@ -1,7 +1,6 @@
 /*
  * Created by IKS DE, IS WIMiIP AGH 2017
  */
-
 package usermanagement;
 
 import java.util.Map;
