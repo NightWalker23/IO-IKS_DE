@@ -3,13 +3,15 @@
  */
 package headleader;
 
-import java.util.Date;
-import java.util.List;
+
+import com.spanishinquisition.functions.Auth;
 import com.spanishinquisition.functions.IAuth;
 import io2017.pierogimroku.task.ORMLiteTaskManager;
 import io2017.pierogimroku.task.api.ITaskManager;
 import io2017.pierogimroku.task.api.TaskLook;
 import io2017.pierogimroku.task.api.TaskNotFoundException;
+import java.util.Date;
+import java.util.List;
 import usermanagement.IUserManagement;
 import usermanagement.User;
 import usermanagement.UserManagement;
@@ -18,14 +20,14 @@ public class Headleader {
 
     ITaskManager taskManager;
     IUserManagement userManagement;
-    IAuth auth;
+    Auth auth;
     String token;
 
     public Headleader() {
 
         taskManager = new ORMLiteTaskManager();
         userManagement = UserManagement.getInstance();
-        auth = new IAuth() {};
+        auth = Auth.getInstance();
         token = null;
     }
 
@@ -35,7 +37,7 @@ public class Headleader {
      * @param password
      */
     public void login(String username , String password){
-        token = auth.login("root", "password");
+        token = auth.login(username, password);
     }
 
     /**
