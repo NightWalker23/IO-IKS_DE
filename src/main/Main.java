@@ -56,12 +56,10 @@ public class Main {
 
                             switch (UI.taskManagementMenu()) {
                                 case 1: {
-                                    int iterator = 0;
                                     System.out.println("Lista zadań:");
-                                    System.out.println("ID\tTID\tName\tUID\tStartDate\t\t\tTime\tPriority\tDescription");
+                                    System.out.println("TID\tName\tUID\tStartDate\t\t\tTime\tPriority\tDescription");
                                     for (TaskLook task : headleader.getTaskList()) {
-                                        System.out.print(iterator++);
-                                        System.out.println("\t" + task.getId() + "\t" + task.getName() +"\t"+ task.getAssignedId() +"\t" + task.getStartDate().toString() +"\t" + task.getTimeEstimate() + "\t" + task.getPriority()+ "\t\t" + task.getDescription());
+                                        System.out.println(task.getId() + "\t" + task.getName() +"\t"+ task.getAssignedId() +"\t" + task.getStartDate().toString() +"\t" + task.getTimeEstimate() + "\t" + task.getPriority()+ "\t\t" + task.getDescription());
                                     }
                                     break;
                                 }
@@ -91,8 +89,15 @@ public class Main {
                                     System.out.print("Podaj ID usera: ");
                                     int userID = scanner.nextInt();
                                     scanner.nextLine();
+                                    
+                                    for (TaskLook taskLook : headleader.getTaskList()) {
+                                        if(taskID == taskLook.getId()){
+                                            taskLook.setStatus(TaskLook.Status.ASSIGNED);
+                                            headleader.assignTask(taskLook, userID);
+                                            break;
+                                        }
+                                    }
 
-                                    headleader.assignTask(headleader.getTaskList().get(taskID), userID);
                                     break;
                                 }
                                 case 4: {
@@ -115,16 +120,35 @@ public class Main {
                                     int priority = scanner.nextInt();
                                     scanner.nextLine();
 
-                                    TaskLook taskLook = new TaskLook(taskID, name, description, 0, 0, null, timeEstimate, priority);
+                                    TaskLook task = null;
+                                    for (TaskLook taskLook : headleader.getTaskList()) {
+                                        if(taskID == taskLook.getId()){
+                                            task = taskLook;
+                                            break;
+                                        }
+                                    }
                                     
-                                    headleader.editTask(taskLook);
+                                    if(task != null){
+                                        task.setName(name);
+                                        task.setDescription(description);
+                                        task.setPriority(priority);
+                                        task.setTimeEstimate(timeEstimate);
+                                        headleader.editTask(task);
+                                    }
                                     break;
                                 }
                                 case 5: {
                                     System.out.println("Podaj ID taska do usunięcia");
-                                    int id = scanner.nextInt();
+                                    int taskID = scanner.nextInt();
                                     scanner.nextLine();
-                                    headleader.removeTask(headleader.getTaskList().get(id));
+                                    
+                                    for (TaskLook taskLook : headleader.getTaskList()) {
+                                        if(taskID == taskLook.getId()){
+                                            headleader.removeTask(taskLook);
+                                            break;
+                                        }
+                                    }
+                                    
                                     break;
                                 }
                                 case 6: {

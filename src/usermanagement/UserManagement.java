@@ -34,7 +34,7 @@ public class UserManagement implements IUserManagement, IUserData {
             User root = new User("root", 0, autoinc++);
             HashFunction hf = Hashing.sha256();
             HashCode hc = hf.newHasher().putString(root.getPassword(), Charsets.UTF_8).hash();     
-            //root.setPassword(hc.toString());
+            root.setPassword(hc.toString());
             
             userList.add(root);
             createBaseFromUserList();
@@ -113,7 +113,7 @@ public class UserManagement implements IUserManagement, IUserData {
             HashFunction hf = Hashing.sha256();
             HashCode hc = hf.newHasher().putString(user.getPassword(), Charsets.UTF_8).hash();
           
-            //user.setPassword(hc.toString());
+            user.setPassword(hc.toString());
             createBaseFromUserList();
         }
     }
