@@ -9,16 +9,17 @@ import java.util.List;
  * Provides management functionality to user database
  */
 public interface IUserManagement {
-    
-    /**
-     * Add user
-     * @param username
-     */
-    void createUser(String username, int permissionLevel);
+
+	/**
+	 *
+	 * @param username name of the new user
+	 * @param permissionLevel permission level of the new user
+	 */
+	void createUser(String username, int permissionLevel);
 
 	/**
 	 * Delete user
-	 * @param userID
+	 * @param userID id of the user
 	 */
     void deleteUser(int userID);
     

@@ -9,22 +9,22 @@ public interface IUserData {
 
     /**
      *
-     * @param login
-     * @return password
+     * @param login name of the user
+     * @return password of the user
      */
     String getUserPassword(String login);
 
     /**
      *
-     * @param login
-     * @return userID
+     * @param login name of the user
+     * @return id of the user
      */
     int getID(String login);
 
     /**
      *
-     * @param login
-     * @return permissionLevel
+     * @param login name of the user
+     * @return permision level of the user
      */
     int getPermissionLevel(String login);
 

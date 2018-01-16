@@ -18,7 +18,6 @@ public class UserManagement implements IUserManagement, IUserData {
     List<User> userList;
     private int autoinc = 0;
     File file = new File("userBase.xd");
-
     private static UserManagement userManagement = null;
 
     private UserManagement() {
@@ -48,9 +47,9 @@ public class UserManagement implements IUserManagement, IUserData {
      * @return instance of UserManagement
      */
     public static UserManagement getInstance() {
-        if (userManagement == null) {
+        if (userManagement == null)
             userManagement = new UserManagement();
-        }
+
         return userManagement;
     }
 
@@ -65,15 +64,13 @@ public class UserManagement implements IUserManagement, IUserData {
             autoinc = userList.get(userList.size() - 1).getUserID() + 1;
             in.close();
             fileIn.close();
-        } catch (IOException i) {
+        } catch (IOException | ClassNotFoundException i) {
             i.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         }
     }
 
     /**
-     * Creates new file and saves userlist to this file
+     * Creates new file and saves users from userList to this file
      */
     public void createBaseFromUserList() {
         try {
@@ -90,7 +87,7 @@ public class UserManagement implements IUserManagement, IUserData {
     /**
      * Create new user
      *
-     * @param username
+     * @param username name of the user
      */
     @Override
     public void createUser(String username, int permissionLevel) {
@@ -121,7 +118,7 @@ public class UserManagement implements IUserManagement, IUserData {
     /**
      * Remove user by userID
      *
-     * @param userID
+     * @param userID id of the user
      */
     @Override
     public void deleteUser(int userID) {
@@ -150,13 +147,11 @@ public class UserManagement implements IUserManagement, IUserData {
 
     /**
      *
-     * @param login
+     * @param login name of the user
      * @return password
      */
     @Override
     public String getUserPassword(String login) {
-        //TODO: zahashować password
-
         String password = null;
         for (User user : userList) {
             if (user.getUsername() == login) {
@@ -169,7 +164,7 @@ public class UserManagement implements IUserManagement, IUserData {
 
     /**
      *
-     * @param login
+     * @param login name of the user
      * @return userID
      */
     @Override
@@ -187,8 +182,8 @@ public class UserManagement implements IUserManagement, IUserData {
 
     /**
      *
-     * @param login
-     * @return permissionLevel
+     * @param login name of the user
+     * @return permissionLevel or -1 if login not found
      */
     @Override
     public int getPermissionLevel(String login) {
@@ -210,25 +205,11 @@ public class UserManagement implements IUserManagement, IUserData {
     @Override
     public Map<Integer, String> getUsersMap() {
 
-        List<User> localUsers = null;
-
-        try {
-            FileInputStream fileIn = new FileInputStream(file);
-            ObjectInputStream in = new ObjectInputStream(fileIn);
-            localUsers = (List<User>) in.readObject();
-            in.close();
-            fileIn.close();
-        } catch (IOException i) {
-            i.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
+        readUserListFromBase();
         Map<Integer, String> usersMap = new HashMap<>();
 
-        for (User el : localUsers) {
+        for (User el : userList)
             usersMap.put(el.getUserID(), el.getUsername());
-        }
 
         return usersMap;
     }

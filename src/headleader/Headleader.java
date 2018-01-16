@@ -5,7 +5,6 @@ package headleader;
 
 
 import com.spanishinquisition.functions.Auth;
-import com.spanishinquisition.functions.IAuth;
 import io2017.pierogimroku.task.ORMLiteTaskManager;
 import io2017.pierogimroku.task.api.ITaskManager;
 import io2017.pierogimroku.task.api.TaskLook;
@@ -32,9 +31,9 @@ public class Headleader {
     }
 
     /**
-     * Get token
-     * @param username
-     * @param password
+     * Get token using method from API from Hiszpańska Inkwizycja
+     * @param username name of the user
+     * @param password password of the user
      */
     public void login(String username , String password){
         token = auth.login(username, password);
@@ -42,16 +41,16 @@ public class Headleader {
 
     /**
      *
-     * @return token
+     * @return token of the user
      */
     public String getToken(){
         return token;
     }
 
     /**
-     *
-     * @param taskLook
-     * @param newOwnerId
+     * Assign task to user
+     * @param taskLook task wrapper from API from Pierogi Mroku
+     * @param newOwnerId id of user that will be assigned to task
      */
     public void assignTask(TaskLook taskLook, int newOwnerId) {
 
@@ -67,8 +66,8 @@ public class Headleader {
     }
 
     /**
-     *
-     * @param taskLook
+     * Removes task
+     * @param taskLook task wrapper from API from Pierogi Mroku
      */
     public void removeTask(TaskLook taskLook){
         if (auth.authorize(token)) {
@@ -81,8 +80,8 @@ public class Headleader {
     }
 
     /**
-     *
-     * @param taskLook
+     * Edit task
+     * @param taskLook task wrapper from API from Pierogi Mroku
      */
     public void editTask(TaskLook taskLook){
         if (auth.authorize(token)) {
@@ -96,7 +95,9 @@ public class Headleader {
 
 
     /**
+     *
      * Get list of all tasks
+     * @return list of tasks
      */
     public List<TaskLook> getTaskList() {
         List<TaskLook> taskLooks = null;
@@ -107,14 +108,14 @@ public class Headleader {
     }
 
     /**
-     * Add new task using method provided by ITaskManager
-     * @param name
-     * @param description
-     * @param ownerId
-     * @param assignedId
-     * @param startDate
-     * @param timeEstimate
-     * @param priority
+     * Add new task using method provided by ITaskManager from Pierogi Mroku
+     * @param name name of the task
+     * @param description description of the task
+     * @param ownerId id of owner
+     * @param assignedId id of user assigned to this task
+     * @param startDate creation date
+     * @param timeEstimate time that this task will take
+     * @param priority priority of this task, 0 is the most important priority
      */
     public void addTask(String name, String description, Integer ownerId, Integer assignedId, Date startDate, Integer timeEstimate, Integer priority)
     {
@@ -135,7 +136,8 @@ public class Headleader {
     /**
      * Create a new user using method provided by IUserManagement
      *
-     * @param username
+     * @param username name of the user
+     * @param permissionLevel permission level of the user
      */
     public void createUser(String username, int permissionLevel) {
 
@@ -145,9 +147,9 @@ public class Headleader {
     }
 
     /**
-     * Delete a new user using method provided by IUserManagement
+     * Delete an user using method provided by IUserManagement
      *
-     * @param userID
+     * @param userID id of the user
      */
     public void deleteUser(int userID) {
 

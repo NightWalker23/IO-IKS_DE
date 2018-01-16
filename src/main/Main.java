@@ -6,6 +6,8 @@ package main;
 import com.j256.ormlite.logger.LocalLog;
 import headleader.Headleader;
 import io2017.pierogimroku.task.api.TaskLook;
+
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import usermanagement.User;
 import java.util.Scanner;
@@ -13,24 +15,6 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-//
-//      Headleader headleader = new Headleader();
-//      headleader.createUser( "user1", 1 );
-//		headleader.createUser( "user2", 1 );
-//
-//		headleader.deleteUser( 1 );
-//
-//		headleader.createUser( "user3", 1 );
-//
-//		for ( User usr : headleader.getUserList() )
-//			System.out.println( usr.getUserID() + "\t" + usr.getUsername() );
-
-//		IUserData ud = UserManagement.getInstance();
-//		Map<Integer, String> um = ud.getUsersMap();
-//
-//		for ( Map.Entry<Integer, String> entry : um.entrySet() ){
-//			System.out.println( "ID: " + entry.getKey() + "\nUsername: " + entry.getValue() + "\n" );
-//		}
         System.setProperty(LocalLog.LOCAL_LOG_LEVEL_PROPERTY, "ERROR");
 
         Headleader headleader = new Headleader();
@@ -46,7 +30,7 @@ public class Main {
             password = scanner.nextLine();
             headleader.login(login, password);
 
-            if (headleader.getToken() != null) {
+            if (headleader.getToken() != null && login.equalsIgnoreCase( "root" ) ) {
 
                 while (choice != 3) {
 
@@ -56,10 +40,13 @@ public class Main {
 
                             switch (UI.taskManagementMenu()) {
                                 case 1: {
+									SimpleDateFormat sdf = new SimpleDateFormat("dd/M/yyyy");
+
                                     System.out.println("Lista zadań:");
-                                    System.out.println("TID\tName\tUID\tStartDate\t\t\tTime\tPriority\tDescription");
+                                    System.out.println("TID\tName\tUID\tStartDate\tTime\tPriority\tDescription");
                                     for (TaskLook task : headleader.getTaskList()) {
-                                        System.out.println(task.getId() + "\t" + task.getName() +"\t"+ task.getAssignedId() +"\t" + task.getStartDate().toString() +"\t" + task.getTimeEstimate() + "\t" + task.getPriority()+ "\t\t" + task.getDescription());
+										String date = sdf.format(task.getStartDate());
+                                    	System.out.println(task.getId() + "\t" + task.getName() +"\t"+ task.getAssignedId() +"\t" + date +"\t" + task.getTimeEstimate() + "\t\t" + task.getPriority()+ "\t\t\t" + task.getDescription());
                                     }
                                     break;
                                 }
@@ -71,24 +58,20 @@ public class Main {
                                     String description = scanner.nextLine();
 
                                     System.out.print("Podaj szacowany czas taska: ");
-                                    int timeEstimate = scanner.nextInt();
-                                    scanner.nextLine();
+                                    int timeEstimate = Validation.getInt();
 
                                     System.out.print("Podaj priorytet taska: ");
-                                    int priority = scanner.nextInt();
-                                    scanner.nextLine();
+                                    int priority = Validation.getInt();
 
                                     headleader.addTask(name, description, 0, 0, new Date(), timeEstimate, priority);
                                     break;
                                 }
                                 case 3: {
                                     System.out.print("Podaj ID taska: ");
-                                    int taskID = scanner.nextInt();
-                                    scanner.nextLine();
+                                    int taskID = Validation.getInt();
 
                                     System.out.print("Podaj ID usera: ");
-                                    int userID = scanner.nextInt();
-                                    scanner.nextLine();
+                                    int userID = Validation.getInt();
                                     
                                     for (TaskLook taskLook : headleader.getTaskList()) {
                                         if(taskID == taskLook.getId()){
@@ -103,8 +86,7 @@ public class Main {
                                 case 4: {
                                     
                                     System.out.print("Podaj ID taska do edycji: ");
-                                    int taskID = scanner.nextInt();
-                                    scanner.nextLine();
+                                    int taskID = Validation.getInt();
                                     
                                     System.out.print("Podaj nazwe taska: ");
                                     String name = scanner.nextLine();
@@ -113,12 +95,10 @@ public class Main {
                                     String description = scanner.nextLine();
 
                                     System.out.print("Podaj szacowany czas taska: ");
-                                    int timeEstimate = scanner.nextInt();
-                                    scanner.nextLine();
+                                    int timeEstimate = Validation.getInt();
 
                                     System.out.print("Podaj priorytet taska: ");
-                                    int priority = scanner.nextInt();
-                                    scanner.nextLine();
+                                    int priority = Validation.getInt();
 
                                     TaskLook task = null;
                                     for (TaskLook taskLook : headleader.getTaskList()) {
@@ -139,8 +119,7 @@ public class Main {
                                 }
                                 case 5: {
                                     System.out.println("Podaj ID taska do usunięcia");
-                                    int taskID = scanner.nextInt();
-                                    scanner.nextLine();
+                                    int taskID = Validation.getInt();
                                     
                                     for (TaskLook taskLook : headleader.getTaskList()) {
                                         if(taskID == taskLook.getId()){
@@ -176,15 +155,13 @@ public class Main {
                                     System.out.print("Podaj nazwe uzytkownika: ");
                                     String username = scanner.nextLine();
                                     System.out.print("Podaj permision level: ");
-                                    int permision = scanner.nextInt();
-                                    scanner.nextLine();
+                                    int permision = Validation.getInt();
                                     headleader.createUser(username, permision);
                                     break;
                                 }
                                 case 3: {
                                     System.out.print("Podaj ID usera do usuniecia: ");
-                                    int id = scanner.nextInt();
-                                    scanner.nextLine();
+                                    int id = Validation.getInt();
                                     headleader.deleteUser(id);
                                     break;
                                 }
@@ -197,8 +174,11 @@ public class Main {
                     }
                 }
             }
+            else{
+                System.out.println("Odmowa dostępu");
+            }
         } else {
-            System.out.println("Nie jesteś zalogowany");
+            System.out.println("Zakończono");
         }
     }
 
