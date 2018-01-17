@@ -7,38 +7,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65632d8a-1b1a-4771-80fa-340d1b89214c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Biblioteki/IO-1.0-SNAPSHOT-jar-with-dependencies.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Biblioteki/taskmanager-1.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Biblioteki/taskmanager-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Biblioteki/taskmanager-mock-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/IKSDE_jar/IO_XD.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKSDE/IO-1.0-SNAPSHOT-jar-with-dependencies.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKSDE/headleader/Headleader$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKSDE/taskmanager-api-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/IKSDE/taskmanager-mock-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/IO-1.0-SNAPSHOT-jar-with-dependencies.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/taskmanager-api-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/taskmanager-mock-1.1.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Biblioteki/taskmanager-api-1.2.jar" afterPath="$PROJECT_DIR$/Biblioteki/taskmanager-api-1.2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IKSDE/headleader/Headleader.class" afterPath="$PROJECT_DIR$/out/production/IKSDE/headleader/Headleader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IKSDE/main/Main.class" afterPath="$PROJECT_DIR$/out/production/IKSDE/main/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IKSDE/main/UserInterface.class" afterPath="$PROJECT_DIR$/out/production/IKSDE/main/UserInterface.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IKSDE/usermanagement/User.class" afterPath="$PROJECT_DIR$/out/production/IKSDE/usermanagement/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IKSDE/usermanagement/UserManagement.class" afterPath="$PROJECT_DIR$/out/production/IKSDE/usermanagement/UserManagement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/taskdatabase" afterPath="$PROJECT_DIR$/taskdatabase" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/userBase.xd" afterPath="$PROJECT_DIR$/userBase.xd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/IKSDE_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/IKSDE_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IKSDE.iml" afterPath="$PROJECT_DIR$/IKSDE.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/allclasses-frame.html" afterPath="$PROJECT_DIR$/dokumentacja/allclasses-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/allclasses-noframe.html" afterPath="$PROJECT_DIR$/dokumentacja/allclasses-noframe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/constant-values.html" afterPath="$PROJECT_DIR$/dokumentacja/constant-values.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/deprecated-list.html" afterPath="$PROJECT_DIR$/dokumentacja/deprecated-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/headleader/Headleader.html" afterPath="$PROJECT_DIR$/dokumentacja/headleader/Headleader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/headleader/package-frame.html" afterPath="$PROJECT_DIR$/dokumentacja/headleader/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/headleader/package-summary.html" afterPath="$PROJECT_DIR$/dokumentacja/headleader/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/headleader/package-tree.html" afterPath="$PROJECT_DIR$/dokumentacja/headleader/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/help-doc.html" afterPath="$PROJECT_DIR$/dokumentacja/help-doc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-1.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-10.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-11.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-11.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-12.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-12.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-13.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-13.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-14.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-14.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-2.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-3.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-4.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-5.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-6.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-7.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-8.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-8.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index-files/index-9.html" afterPath="$PROJECT_DIR$/dokumentacja/index-files/index-9.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/index.html" afterPath="$PROJECT_DIR$/dokumentacja/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/main/Main.html" afterPath="$PROJECT_DIR$/dokumentacja/main/Main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/main/UserInterface.html" afterPath="$PROJECT_DIR$/dokumentacja/main/UserInterface.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/main/Validation.html" afterPath="$PROJECT_DIR$/dokumentacja/main/Validation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/main/package-frame.html" afterPath="$PROJECT_DIR$/dokumentacja/main/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/main/package-summary.html" afterPath="$PROJECT_DIR$/dokumentacja/main/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/main/package-tree.html" afterPath="$PROJECT_DIR$/dokumentacja/main/package-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/overview-frame.html" afterPath="$PROJECT_DIR$/dokumentacja/overview-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/overview-summary.html" afterPath="$PROJECT_DIR$/dokumentacja/overview-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/overview-tree.html" afterPath="$PROJECT_DIR$/dokumentacja/overview-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/serialized-form.html" afterPath="$PROJECT_DIR$/dokumentacja/serialized-form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/usermanagement/IUserData.html" afterPath="$PROJECT_DIR$/dokumentacja/usermanagement/IUserData.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/usermanagement/IUserManagement.html" afterPath="$PROJECT_DIR$/dokumentacja/usermanagement/IUserManagement.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/usermanagement/User.html" afterPath="$PROJECT_DIR$/dokumentacja/usermanagement/User.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/usermanagement/UserManagement.html" afterPath="$PROJECT_DIR$/dokumentacja/usermanagement/UserManagement.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/usermanagement/package-frame.html" afterPath="$PROJECT_DIR$/dokumentacja/usermanagement/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/usermanagement/package-summary.html" afterPath="$PROJECT_DIR$/dokumentacja/usermanagement/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dokumentacja/usermanagement/package-tree.html" afterPath="$PROJECT_DIR$/dokumentacja/usermanagement/package-tree.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/headleader/Headleader.java" afterPath="$PROJECT_DIR$/src/headleader/Headleader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/Main.java" afterPath="$PROJECT_DIR$/src/main/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/UserInterface.java" afterPath="$PROJECT_DIR$/src/main/UserInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/usermanagement/IUserData.java" afterPath="$PROJECT_DIR$/src/usermanagement/IUserData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/usermanagement/IUserManagement.java" afterPath="$PROJECT_DIR$/src/usermanagement/IUserManagement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/usermanagement/User.java" afterPath="$PROJECT_DIR$/src/usermanagement/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/usermanagement/UserManagement.java" afterPath="$PROJECT_DIR$/src/usermanagement/UserManagement.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,8 +64,89 @@
       <file leaf-file-name="UserManagement.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/usermanagement/UserManagement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2520">
+            <state relative-caret-position="2030">
               <caret line="184" column="20" lean-forward="false" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1516215053325" expanded="true" signature="4855:4863" ph="/**...*/" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Validation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Validation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IUserManagement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/usermanagement/IUserManagement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#545#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IUserData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/usermanagement/IUserData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Headleader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/headleader/Headleader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="130" column="7" lean-forward="false" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2324">
+              <caret line="175" column="13" lean-forward="false" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInterface.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/UserInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="658">
+              <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/usermanagement/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="798">
+              <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,11 +183,11 @@
         <option value="$PROJECT_DIR$/src/main/Main.java" />
         <option value="$PROJECT_DIR$/src/main/UserInterface.java" />
         <option value="$PROJECT_DIR$/src/main/Validation.java" />
-        <option value="$PROJECT_DIR$/src/headleader/Headleader.java" />
         <option value="$PROJECT_DIR$/src/usermanagement/IUserData.java" />
         <option value="$PROJECT_DIR$/src/usermanagement/IUserManagement.java" />
-        <option value="$PROJECT_DIR$/src/usermanagement/User.java" />
         <option value="$PROJECT_DIR$/src/usermanagement/UserManagement.java" />
+        <option value="$PROJECT_DIR$/src/usermanagement/User.java" />
+        <option value="$PROJECT_DIR$/src/headleader/Headleader.java" />
       </list>
     </option>
   </component>
@@ -106,8 +198,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="892" />
-    <option name="height" value="484" />
+    <option name="x" value="490" />
+    <option name="y" value="248" />
+    <option name="width" value="872" />
+    <option name="height" value="482" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -129,6 +223,7 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,11 +259,10 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Biblioteki/taskmanager-1.2.3.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.19548023" />
@@ -425,33 +519,35 @@
       <workItem from="1516008758821" duration="52000" />
       <workItem from="1516029633413" duration="34000" />
       <workItem from="1516110188855" duration="7193000" />
+      <workItem from="1516144373073" duration="34000" />
+      <workItem from="1516204641106" duration="7507000" />
+      <workItem from="1516215113899" duration="102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7556000" />
+    <option name="totallyTimeSpent" value="15199000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="734" extended-state="6" />
+    <frame x="490" y="248" width="1366" height="734" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.86754966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.88245034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19242424" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17727272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -463,6 +559,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -483,6 +580,105 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/usermanagement/UserManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2408">
+          <caret line="184" column="20" lean-forward="false" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1516215053325" expanded="true" signature="4855:4863" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Validation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/usermanagement/IUserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/usermanagement/IUserManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2324">
+          <caret line="175" column="13" lean-forward="false" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/UserInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/usermanagement/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/headleader/Headleader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1596">
+          <caret line="130" column="7" lean-forward="false" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/usermanagement/UserManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1516215053325" expanded="true" signature="4855:4863" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/usermanagement/UserManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1516215053325" expanded="true" signature="4855:4863" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/usermanagement/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -517,6 +713,7 @@
           <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1516215053325" expanded="true" signature="4855:4863" ph="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -585,6 +782,7 @@
           <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1516215053325" expanded="true" signature="4855:4863" ph="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -623,6 +821,7 @@
           <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1516215053325" expanded="true" signature="4855:4863" ph="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -691,6 +890,7 @@
           <caret line="68" column="14" lean-forward="false" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1516215053325" expanded="true" signature="4855:4863" ph="/**...*/" />
           </folding>
         </state>
       </provider>
@@ -716,20 +916,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/userBase.xd" />
-    <entry file="file://$PROJECT_DIR$/src/headleader/Headleader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Validation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="157" column="9" lean-forward="true" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1940">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="56">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -738,16 +928,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/UserInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="658">
           <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/Validation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="2324">
+          <caret line="175" column="13" lean-forward="false" selection-start-line="175" selection-start-column="13" selection-end-line="175" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/usermanagement/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -764,18 +964,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/usermanagement/IUserManagement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        <state relative-caret-position="266">
+          <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding>
             <element signature="e#0#545#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/usermanagement/User.java">
+    <entry file="file://$PROJECT_DIR$/src/headleader/Headleader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+        <state relative-caret-position="526">
+          <caret line="130" column="7" lean-forward="false" selection-start-line="130" selection-start-column="7" selection-end-line="130" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -784,10 +984,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/usermanagement/UserManagement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
+        <state relative-caret-position="2030">
           <caret line="184" column="20" lean-forward="false" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1516215053325" expanded="true" signature="4855:4863" ph="/**...*/" />
           </folding>
         </state>
       </provider>

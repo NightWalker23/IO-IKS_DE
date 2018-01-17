@@ -5,6 +5,7 @@ package headleader;
 
 
 import com.spanishinquisition.functions.Auth;
+import com.spanishinquisition.functions.IAuth;
 import io2017.pierogimroku.task.ORMLiteTaskManager;
 import io2017.pierogimroku.task.api.ITaskManager;
 import io2017.pierogimroku.task.api.TaskLook;
@@ -19,7 +20,7 @@ public class Headleader {
 
     ITaskManager taskManager;
     IUserManagement userManagement;
-    Auth auth;
+    IAuth auth;
     String token;
 
     public Headleader() {
