@@ -104,12 +104,11 @@ public class UserManagement implements IUserManagement, IUserData {
         if (isAvailable) {
             User user = new User(username, permissionLevel, autoinc++);
             userList.add(user);
-            createBaseFromUserList();
             System.out.println("Dodano nowego użytkownika:\n\tID: " + user.getUserID() + "\n\tUsername: " + user.getUsername() + "\n\tPassword: " + user.getPassword() + "\n");
 
             HashFunction hf = Hashing.sha256();
             HashCode hc = hf.newHasher().putString(user.getPassword(), Charsets.UTF_8).hash();
-          
+
             user.setPassword(hc.toString());
             createBaseFromUserList();
         }
