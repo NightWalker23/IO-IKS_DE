@@ -15,9 +15,9 @@ import java.util.Map;
 
 public class UserManagement implements IUserManagement, IUserData {
 
-    List<User> userList;
+    private List<User> userList;
     private int autoinc = 0;
-    File file = new File("userBase.xd");
+    private File file = new File("userBase.xd");
     private static UserManagement userManagement = null;
 
     private UserManagement() {
@@ -56,7 +56,7 @@ public class UserManagement implements IUserManagement, IUserData {
     /**
      * Read users from file and saves it to userList
      */
-    public void readUserListFromBase() {
+    private void readUserListFromBase() {
         try {
             FileInputStream fileIn = new FileInputStream(file);
             ObjectInputStream in = new ObjectInputStream(fileIn);
@@ -72,7 +72,7 @@ public class UserManagement implements IUserManagement, IUserData {
     /**
      * Creates new file and saves users from userList to this file
      */
-    public void createBaseFromUserList() {
+    private void createBaseFromUserList() {
         try {
             FileOutputStream fileOut = new FileOutputStream(file);
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
@@ -165,7 +165,7 @@ public class UserManagement implements IUserManagement, IUserData {
     /**
      *
      * @param login name of the user
-     * @return userID
+     * @return userID returns -1 if user does not exist
      */
     @Override
     public int getID(String login) {
