@@ -19,6 +19,7 @@ public class Main {
 
         Headleader headleader = new Headleader();
         Scanner scanner = new Scanner(System.in);
+        String input;
         UserInterface UI = new UserInterface();
         int choice = UI.loginMenu();
 
@@ -57,21 +58,37 @@ public class Main {
                                     System.out.print("Podaj opis taska: ");
                                     String description = scanner.nextLine();
 
-                                    System.out.print("Podaj szacowany czas taska: ");
-                                    int timeEstimate = Validation.getInt();
+                                    System.out.print("Podaj szacowany czas taska (1-8): ");
+                                    int timeEstimate;
+                                    do {
+                                        input = scanner.nextLine();
+                                        timeEstimate = Validation.validateInt( input, 1, 8 );
+                                    } while ( timeEstimate == - 1 );
 
-                                    System.out.print("Podaj priorytet taska: ");
-                                    int priority = Validation.getInt();
+                                    System.out.print("Podaj priorytet taska (0-10): ");
+                                    int priority;
+									do {
+										input = scanner.nextLine();
+										priority = Validation.validateInt( input, 0, 10 );
+									} while ( priority == - 1 );
 
                                     headleader.addTask(name, description, 0, 0, new Date(), timeEstimate, priority);
                                     break;
                                 }
                                 case 3: {
                                     System.out.print("Podaj ID taska: ");
-                                    int taskID = Validation.getInt();
+                                    int taskID;
+									do {
+										input = scanner.nextLine();
+										taskID = Validation.validateIntID( input );
+									} while ( taskID == - 1 );
 
                                     System.out.print("Podaj ID usera: ");
-                                    int userID = Validation.getInt();
+                                    int userID;
+									do {
+										input = scanner.nextLine();
+										userID = Validation.validateIntID( input );
+									} while ( userID == - 1 );
                                     
                                     for (TaskLook taskLook : headleader.getTaskList()) {
                                         if(taskID == taskLook.getId()){
@@ -86,7 +103,11 @@ public class Main {
                                 case 4: {
                                     
                                     System.out.print("Podaj ID taska do edycji: ");
-                                    int taskID = Validation.getInt();
+                                    int taskID;
+									do {
+										input = scanner.nextLine();
+										taskID = Validation.validateIntID( input );
+									} while ( taskID == - 1 );
                                     
                                     System.out.print("Podaj nazwe taska: ");
                                     String name = scanner.nextLine();
@@ -94,11 +115,19 @@ public class Main {
                                     System.out.print("Podaj opis taska: ");
                                     String description = scanner.nextLine();
 
-                                    System.out.print("Podaj szacowany czas taska: ");
-                                    int timeEstimate = Validation.getInt();
+                                    System.out.print("Podaj szacowany czas taska (1-8): ");
+                                    int timeEstimate;
+									do {
+										input = scanner.nextLine();
+										timeEstimate = Validation.validateInt( input, 1, 8 );
+									} while ( timeEstimate == - 1 );
 
-                                    System.out.print("Podaj priorytet taska: ");
-                                    int priority = Validation.getInt();
+                                    System.out.print("Podaj priorytet taska (0-10): ");
+                                    int priority;
+									do {
+										input = scanner.nextLine();
+										priority = Validation.validateInt( input, 0, 10 );
+									} while ( priority == - 1 );
 
                                     TaskLook task = null;
                                     for (TaskLook taskLook : headleader.getTaskList()) {
@@ -119,7 +148,11 @@ public class Main {
                                 }
                                 case 5: {
                                     System.out.println("Podaj ID taska do usunięcia");
-                                    int taskID = Validation.getInt();
+                                    int taskID;
+									do {
+										input = scanner.nextLine();
+										taskID = Validation.validateIntID( input );
+									} while ( taskID == - 1 );
                                     
                                     for (TaskLook taskLook : headleader.getTaskList()) {
                                         if(taskID == taskLook.getId()){
@@ -154,14 +187,23 @@ public class Main {
                                 case 2: {
                                     System.out.print("Podaj nazwe uzytkownika: ");
                                     String username = scanner.nextLine();
-                                    System.out.print("Podaj permision level: ");
-                                    int permision = Validation.getInt();
-                                    headleader.createUser(username, permision);
+                                    System.out.print("Podaj permision level (0-10): ");
+                                    int permision;
+									do {
+										input = scanner.nextLine();
+										permision = Validation.validateInt( input, 0, 10 );
+									} while ( permision == - 1 );
+
+									headleader.createUser(username, permision);
                                     break;
                                 }
                                 case 3: {
                                     System.out.print("Podaj ID usera do usuniecia: ");
-                                    int id = Validation.getInt();
+                                    int id;
+									do {
+										input = scanner.nextLine();
+										id = Validation.validateIntID( input );
+									} while ( id == - 1 );
                                     headleader.deleteUser(id);
                                     break;
                                 }
