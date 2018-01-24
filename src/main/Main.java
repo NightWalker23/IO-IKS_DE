@@ -186,7 +186,12 @@ public class Main {
                                 }
                                 case 2: {
                                     System.out.print("Podaj nazwe uzytkownika: ");
-                                    String username = scanner.nextLine();
+                                    String username;
+                                    do {
+                                        input = scanner.nextLine();
+                                        username = Validation.validateUsername(input );
+                                    } while ( username == null );
+
                                     System.out.print("Podaj permision level (0-10): ");
                                     int permision;
 									do {
