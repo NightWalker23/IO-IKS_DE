@@ -33,7 +33,7 @@ public class User implements Serializable{
 	 * @param length length of the password
 	 * @return random password
 	 */
-	private String generatePassword ( int length ){
+	public String generatePassword ( int length ){
 		Random random = new SecureRandom();
 		return String.format("%"+length+"s", new BigInteger(length*5, random).toString(32)).replace('\u0020', '0');
 	}
