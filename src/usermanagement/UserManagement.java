@@ -108,7 +108,7 @@ public class UserManagement implements IUserManagement, IUserData {
 
             HashFunction hf = Hashing.sha256();
             HashCode hc = hf.newHasher().putString(user.getPassword(), Charsets.UTF_8).hash();
-
+          
             user.setPassword(hc.toString());
             createBaseFromUserList();
         }
@@ -153,7 +153,7 @@ public class UserManagement implements IUserManagement, IUserData {
     public String getUserPassword(String login) {
         String password = null;
         for (User user : userList) {
-            if (user.getUsername() == login) {
+            if (user.getUsername().equals(login)) {
                 password = user.getPassword();
                 break;
             }
@@ -171,7 +171,7 @@ public class UserManagement implements IUserManagement, IUserData {
 
         int ID = -1;
         for (User user : userList) {
-            if (user.getUsername() == login) {
+            if (user.getUsername().equals(login)) {
                 ID = user.getUserID();
                 break;
             }
@@ -189,7 +189,7 @@ public class UserManagement implements IUserManagement, IUserData {
 
         int permissionLevel = -1;
         for (User user : userList) {
-            if (user.getUsername() == login) {
+            if (user.getUsername().equals(login)) {
                 permissionLevel = user.getPermissionLevel();
                 break;
             }
