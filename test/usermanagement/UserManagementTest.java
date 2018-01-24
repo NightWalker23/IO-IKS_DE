@@ -7,6 +7,8 @@ import com.google.common.base.Charsets;
 import com.google.common.hash.HashCode;
 import com.google.common.hash.HashFunction;
 import com.google.common.hash.Hashing;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import org.junit.AfterClass;
@@ -24,6 +26,28 @@ import static org.junit.Assert.*;
 public class UserManagementTest {
 
     public UserManagementTest() {
+    }
+
+    @Test
+    public void readUserListFromBase() throws Exception {
+        List<User> userList = new ArrayList();
+        User user = new User("root",0,0);
+        user.setPassword("password");
+        HashFunction hf = Hashing.sha256();
+        HashCode hc = hf.newHasher().putString(user.getPassword(), Charsets.UTF_8).hash();
+        user.setPassword(hc.toString());
+        userList.add(user);
+
+        UserManagement userManagment = UserManagement.getInstance();
+        userManagment.readUserListFromBase();
+        List<User> userList2;
+        userList2 = userManagment.getUserList();
+
+        assertEquals(userList.get(0).getUsername(),userList2.get(0).getUsername());
+        assertEquals(userList.get(0).getPassword(),userList2.get(0).getPassword());
+        assertEquals(userList.get(0).getPermissionLevel(),userList2.get(0).getPermissionLevel());
+        assertEquals(userList.get(0).getUserID(),userList2.get(0).getUserID());
+
     }
 
     @BeforeClass

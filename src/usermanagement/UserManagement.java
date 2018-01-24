@@ -57,7 +57,7 @@ public class UserManagement implements IUserManagement, IUserData {
     /**
      * Read users from file and saves it to userList
      */
-    private void readUserListFromBase() {
+    protected void readUserListFromBase() {
         try {
             FileInputStream fileIn = new FileInputStream(file);
             ObjectInputStream in = new ObjectInputStream(fileIn);
@@ -73,7 +73,7 @@ public class UserManagement implements IUserManagement, IUserData {
     /**
      * Creates new file and saves users from userList to this file
      */
-    private void createBaseFromUserList() {
+    protected void createBaseFromUserList() {
         try {
             FileOutputStream fileOut = new FileOutputStream(file);
             ObjectOutputStream out = new ObjectOutputStream(fileOut);
