@@ -31,6 +31,7 @@ public class UserManagement implements IUserManagement, IUserData {
             }
 
             User root = new User("root", 0, autoinc++);
+            root.setPassword("password");
             HashFunction hf = Hashing.sha256();
             HashCode hc = hf.newHasher().putString(root.getPassword(), Charsets.UTF_8).hash();     
             root.setPassword(hc.toString());

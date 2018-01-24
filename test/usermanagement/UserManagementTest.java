@@ -9,7 +9,8 @@ import com.google.common.hash.HashFunction;
 import com.google.common.hash.Hashing;
 import java.util.List;
 import java.util.Map;
-import org.junit.AfterClass;;
+import org.junit.AfterClass;
+;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -18,6 +19,8 @@ import static org.junit.Assert.*;
  *
  * @author Szysz
  */
+
+
 public class UserManagementTest {
 
     public UserManagementTest() {
@@ -175,9 +178,11 @@ public class UserManagementTest {
     public void testGetUsersMap() {
         System.out.println("getUsersMap");
         UserManagement instance = UserManagement.getInstance();
-        Map<Integer, String> expResult = instance.getUsersMap();
         Map<Integer, String> result = instance.getUsersMap();
-        assertEquals(expResult, result);
+        String resUser = result.get(0);
+        String expResult = "root";
+        
+        assertEquals(expResult, resUser);
     }
 
     /**
