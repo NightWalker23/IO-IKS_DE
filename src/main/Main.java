@@ -6,7 +6,6 @@ package main;
 import com.j256.ormlite.logger.LocalLog;
 import headleader.Headleader;
 import io2017.pierogimroku.task.api.TaskLook;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import usermanagement.User;

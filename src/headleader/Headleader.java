@@ -3,17 +3,14 @@
  */
 package headleader;
 
-
 import com.spanishinquisition.functions.Auth;
 import com.spanishinquisition.functions.IAuth;
 import io2017.pierogimroku.task.ORMLiteTaskManager;
 import io2017.pierogimroku.task.api.ITaskManager;
 import io2017.pierogimroku.task.api.TaskLook;
 import io2017.pierogimroku.task.api.TaskNotFoundException;
-
 import java.util.Date;
 import java.util.List;
-
 import usermanagement.IUserManagement;
 import usermanagement.User;
 import usermanagement.UserManagement;

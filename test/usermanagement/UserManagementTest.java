@@ -7,23 +7,21 @@ import com.google.common.base.Charsets;
 import com.google.common.hash.HashCode;
 import com.google.common.hash.HashFunction;
 import com.google.common.hash.Hashing;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import org.junit.AfterClass;
-;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author Szysz
- */
-
 
 public class UserManagementTest {
+
+    /**
+     *
+     * One should delete userBase.xd before running tests
+     */
 
     public UserManagementTest() {
     }
